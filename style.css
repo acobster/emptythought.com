@@ -1,0 +1,107 @@
+body {
+    background-color: #FFF;
+    font-family: courier;
+    font-size: 20px;
+}
+
+.top {
+    background: transparent url('images/top.png') no-repeat;
+    width: 796px;
+    height: 335px;
+    float: left;
+    position: absolute;
+}
+    .top h1 {
+        float: left;
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        top: -30px;
+        left: 350px;
+        padding: 20px 30px;
+        background: transparent url('images/top-header.png') no-repeat;
+    }
+
+.navbar {
+    width: 500px;
+    height: 50px;
+    top: 110px;
+    left: 300px;
+    padding: 10px;
+    float: left;
+    position: absolute;
+    background: transparent;
+    z-index: 2;
+}
+    .navbar ul {
+        list-style: none;
+        display: inline;
+    }
+    .navbar a {
+        text-decoration: none;
+        position: relative;
+        left: 20%;
+        float: left;
+        margin: 5px;
+        padding: 10px;
+    }
+        .navbar li:nth-child(4n+1) a {
+            background: transparent url('images/red.png');
+            color: #222;
+        }
+        .navbar li:nth-child(4n+2) a {
+            background: transparent url('images/blue.png');
+            color: #E1EEFF;
+        }
+        .navbar li:nth-child(4n+3) a {
+            background: transparent url('images/indigo.png');
+            color: #F75C4C;
+        }
+        .navbar li:nth-child(4n+4) a {
+            background: transparent url('images/orange.png');
+            color: #800;
+        }
+        .navbar a:hover,
+        .navbar a:active {
+            font-weight: bold;
+            background: transparent url('images/enso.png') no-repeat;
+            color: #222;
+        }
+
+.container {
+    color: #009;
+    width: 800px;
+    float: left;
+    position: relative;
+    top: 175px;
+    left: 50px;
+    padding-bottom: 3em;
+}
+    .player {
+        float: right;
+        position: relative;
+        top: 50px;
+        width: 150px;
+        height: 300px;
+        margin: 0 0 50px 25px;
+    }
+    article {
+        width: 100%;
+        position: static;
+        float: none;
+        padding-bottom: 10em;
+        margin-bottom: -1.5em;
+        background: transparent url('images/thought.png') no-repeat bottom right;
+    }
+    article:last-child {
+        background: none;
+        padding-bottom: 5em;
+    }
+        article h1 {
+            position: relative;
+            top: 0;
+            left: 2em;
+            padding: 0.5em;
+            background: transparent url('images/orange.png');
+            width: 520px;
+        }
