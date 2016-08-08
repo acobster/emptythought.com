@@ -4,6 +4,17 @@ body {
     font-size: 20px;
 }
 
+.container {
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
 .top {
     background: transparent url('images/top.png') no-repeat;
     width: 796px;
@@ -17,19 +28,19 @@ body {
         width: 400px;
         height: 100px;
         top: -30px;
-        left: 350px;
+        left: 45%;
         padding: 20px 30px;
         background: transparent url('images/top-header.png') no-repeat;
     }
 
 .navbar {
-    width: 500px;
-    height: 50px;
-    top: 110px;
-    left: 300px;
-    padding: 10px;
-    float: left;
+    float: right;
     position: absolute;
+    top: 140px;
+    right: 7%;
+    height: 50px;
+    padding: 10px;
+
     background: transparent;
     z-index: 2;
 }
@@ -37,13 +48,10 @@ body {
         list-style: none;
         display: inline;
     }
-    .navbar a {
-        text-decoration: none;
+    .navbar li {
+        display: inline;
         position: relative;
-        left: 20%;
-        float: left;
         margin: 5px;
-        padding: 10px;
     }
         .navbar li:nth-child(4n+1) a {
             background: transparent url('images/red.png');
@@ -61,20 +69,23 @@ body {
             background: transparent url('images/orange.png');
             color: #800;
         }
+
+        .navbar a {
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
         .navbar a:hover,
         .navbar a:active {
             font-weight: bold;
-            background: transparent url('images/enso.png') no-repeat;
             color: #222;
         }
 
-.container {
+.content-wrapper {
     color: #009;
-    width: 800px;
     float: left;
     position: relative;
     top: 175px;
-    left: 50px;
     padding-bottom: 3em;
 }
     .player {
